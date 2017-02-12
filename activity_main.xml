@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="#e4e4db"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.internationalpaper.ipd1.MainActivity">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height= "0dp"
+        android:layout_weight = "2"
+        android:paddingTop="16dp"
+        android:src="@drawable/internationalpaper1"
+        android:layout_gravity="top"
+
+        />
+
+
+    <TextView
+        android:textSize="32sp"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight = "1"
+        android:paddingTop="32dp"
+
+        android:text="Welcome to IPD!"
+
+        />
+
+
+    <EditText
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:inputType="text"
+        android:imeOptions="actionSend" />
+
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="password"
+        android:inputType="text"
+        android:imeOptions="actionSend" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:text="SUBMIT  "
+        android:radius="2dp"
+        android:id="@+id/but1"
+        android:onClick="buttonOnClick"/>
+
+    <TextView
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight = "1"
+        android:paddingTop="16dp"
+        android:textColor="#0062ff"
+        android:id="@+id/txt3"
+
+        android:text="Not a member sign Up!"
+
+        />
+</LinearLayout>
