@@ -23,11 +23,17 @@ public class MainActivity extends AppCompatActivity {
                 // password2 = editpass.getText().toString();
                 // Intent toy = new Intent(MainActivity.this, second.class );
                 // startActivity(toy);
+                EditText editTextSearch1 = (EditText) findViewById(R.id.username);
                 EditText editTextSearch = (EditText) findViewById(R.id.password);
                 if (editTextSearch.getText().toString() != null) {
                     String value = "value";
                     Intent i = new Intent(getApplicationContext(), second.class);
                     i.putExtra("SearchQueryTerm", editTextSearch.getText().toString());
+                    if (editTextSearch1.getText().toString() != null) {
+                        String value1 = "value";
+                        i.putExtra("SearchQueryTerm1", editTextSearch1.getText().toString());
+                        editTextSearch1.setText("");
+                    }
                     startActivity(i);
                     editTextSearch.setText("");
                 }
